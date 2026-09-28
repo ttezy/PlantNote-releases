@@ -1,0 +1,44 @@
+{
+  "name": "植记 · PlantNote 预览源",
+  "identifier": "com.plantnote.source.preview",
+  "sourceURL": "https://raw.githubusercontent.com/ttezy/PlantNote-releases/main/apps.json",
+  "apps": [
+    {
+      "name": "植记 · PlantNote",
+      "bundleIdentifier": "com.plantnote.plantnote",
+      "developerName": "ttezy",
+      "subtitle": "每一棵植物，都被记得。",
+      "localizedDescription": "记录植物、安排养护、观察生长。支持头像、自定义标签、循环计划、养护照片、时间线与 CSV 导入导出。\n\n当前为 0.1.0 预览版，iPhone 真机安装、拍照及覆盖更新仍待验收。数据保存在设备本机，暂不支持云同步与完整照片备份。",
+      "iconURL": "https://raw.githubusercontent.com/ttezy/PlantNote-releases/main/icon.png",
+      "tintColor": "254B38",
+      "permissions": [
+        {
+          "type": "camera",
+          "usageDescription": "用于拍摄植物照片，添加到你正在填写的养护记录。"
+        },
+        {
+          "type": "photos",
+          "usageDescription": "用于选择植物头像和养护照片，记录植物的生长与日常变化。"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSCameraUsageDescription": "用于拍摄植物照片，添加到你正在填写的养护记录。",
+          "NSPhotoLibraryUsageDescription": "用于选择植物头像和养护照片，记录植物的生长与日常变化。"
+        }
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "date": "2026-09-28T07:18:38Z",
+          "localizedDescription": "首个预览版：植物资料、标签、循环养护计划、观察照片、时间线、CSV 导入导出，以及触摸滑动与桌面菜单操作。",
+          "downloadURL": "https://github.com/ttezy/PlantNote-releases/releases/download/v0.1.0/plantnote-0.1.0-b1-dcebfc784769-attempt1-ios-arm64-unsigned.ipa",
+          "size": 8201253,
+          "minOSVersion": "15.0"
+        }
+      ]
+    }
+  ],
+  "news": []
+}

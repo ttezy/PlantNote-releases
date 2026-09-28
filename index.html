@@ -1,31 +1,71 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="color-scheme" content="light dark">
-<meta name="description" content="在 iPhone 上通过 SideStore 安装植记 PlantNote，记录植物、养护与生长。">
-<title>安装植记 · PlantNote</title>
-<link rel="icon" href="icon.png">
-<style>
-:root{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#1b3026;background:#f4f6f1;color-scheme:light dark;--muted:#53695c;--panel:#fff;--line:#d9e2d8;--green:#254b38;--accent:#fff}*{box-sizing:border-box}body{margin:0;padding:32px 22px 48px;padding-bottom:max(48px,env(safe-area-inset-bottom))}main{max-width:470px;margin:6vh auto}img{display:block;width:88px;height:88px;border-radius:21px;margin-bottom:25px}h1{font-size:34px;letter-spacing:-1px;margin:0 0 10px;font-weight:650}.subtitle{font-size:18px;color:var(--muted);margin:0 0 19px;line-height:1.6}.badge{display:inline-block;border:1px solid var(--line);border-radius:20px;padding:6px 11px;font-size:13px;color:var(--muted)}.actions{display:grid;gap:12px;margin:32px 0 22px}a.button{display:block;padding:16px 18px;border-radius:15px;text-decoration:none;text-align:center;font-size:17px;font-weight:600;background:var(--green);color:var(--accent);min-height:54px}.button.secondary{background:var(--panel);color:inherit;border:1px solid var(--line)}a:focus-visible,textarea:focus-visible{outline:3px solid #74ae86;outline-offset:4px}p{line-height:1.65}small,.hint{color:var(--muted)}.hint{font-size:14px;margin:0 0 28px}.manual{padding:20px;background:var(--panel);border:1px solid var(--line);border-radius:16px}.manual h2{font-size:16px;margin:0 0 10px}.manual p{font-size:14px;margin:0 0 12px;color:var(--muted)}textarea{display:block;width:100%;resize:none;border:1px solid var(--line);border-radius:9px;padding:11px;background:transparent;color:inherit;font-size:13px;line-height:1.55;word-break:break-all}footer{margin-top:28px;font-size:13px;color:var(--muted)}footer a{color:inherit;text-underline-offset:3px}.note{font-size:13px;margin-top:22px;color:var(--muted)}@media(prefers-color-scheme:dark){:root{color:#e8efe7;background:#17251e;--muted:#aabdae;--panel:#213229;--line:#385242;--green:#a9d2b1;--accent:#183c28}}@media(max-width:360px){main{margin-top:24px}h1{font-size:30px}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="植记 PlantNote，离线优先的植物养护助手。记录植物、安排养护、留住生长的变化。下载各平台安装包，查看 iOS 与 SideStore 安装指南。">
+  <title>植记 PlantNote · 每一棵植物，都被记得</title>
+  <link rel="icon" href="icon.png">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="site.css">
 </head>
-<body><main>
-<img src="icon.png" alt="植记的幼苗图标" width="88" height="88">
-<h1>植记 <span lang="en">PlantNote</span></h1>
-<p class="subtitle">每一棵植物，都被记得。</p>
-<span class="badge">0.1.1 · iOS 15.0+</span>
-<div class="actions">
-<a class="button" href="sidestore://source?url=https%3A%2F%2Fraw.githubusercontent.com%2Fttezy%2FPlantNote-releases%2Fmain%2Fapps.json">添加到 SideStore</a>
-<a class="button secondary" href="sidestore://install?url=https%3A%2F%2Fgithub.com%2Fttezy%2FPlantNote-releases%2Freleases%2Fdownload%2Fv0.1.1%2Fplantnote-0.1.1-b6-ebc6a56b1449-attempt1-ios-arm64-unsigned.ipa">直接安装当前版本</a>
-</div>
-<p class="hint">请在已配置 SideStore 的 iPhone 上打开。添加预览源后，可在 SideStore 内安装「植记」并查看后续更新。</p>
-<section class="manual" aria-labelledby="manual-title">
-<h2 id="manual-title">也可以手动添加源</h2>
-<p>复制下面的地址，在 SideStore 的来源页面点「＋」粘贴添加。</p>
-<textarea readonly rows="3" aria-label="SideStore 订阅源地址" spellcheck="false">https://raw.githubusercontent.com/ttezy/PlantNote-releases/main/apps.json</textarea>
-</section>
-<p class="note">此来源包含预览版。植物记录与照片保存在设备本机，暂不支持云同步。</p>
-<footer><a href="https://github.com/ttezy/PlantNote-releases/releases">下载各平台安装包与版本说明</a> · <a href="https://docs.sidestore.io/docs/advanced/app-sources">SideStore 使用说明</a></footer>
-</main></body></html>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+  <header class="site-header">
+    <div class="nav-wrap container">
+      <a class="brand" href="./" aria-label="植记 PlantNote 首页"><img src="icon.png" width="36" height="36" alt=""><span>植记<span class="brand-en">PlantNote</span></span></a>
+      <nav aria-label="主导航"><a href="#features">认识植记</a><a href="#download">下载</a><a href="install.html">安装指南</a><a class="nav-ios" href="ios.html">iOS / SideStore <span aria-hidden="true">↗</span></a></nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <a class="version-pill" href="https://github.com/ttezy/PlantNote-releases/releases/tag/v0.1.1">v0.1.1 <span>开发预览</span><span aria-hidden="true">↗</span></a>
+        <h1 id="hero-title">每一棵植物，<br><em>都被记得。</em></h1>
+        <p class="hero-description">记下浇水的日子，留住新叶的模样。<br>用植记，慢慢照顾你的小小花园。</p>
+        <div class="button-row"><a class="button primary" href="#download">下载植记 <span aria-hidden="true">↓</span></a><a class="button quiet" href="ios.html">iPhone 安装指南 <span aria-hidden="true">↗</span></a></div>
+        <p class="hero-facts">离线可用<span aria-hidden="true">/</span>本机保存<span aria-hidden="true">/</span>六个平台</p>
+      </div>
+      <div class="hero-visual">
+        <div class="visual-heading"><span>PLANTNOTE</span><span>记录 · 养护 · 生长</span></div>
+        <img class="hero-icon" src="icon.png" width="260" height="260" alt="植记的双叶幼苗标志">
+        <div class="journal-sample">
+          <div class="sample-title"><span>小小的变化，也值得记录。</span><span class="sample-label">记录示意</span></div>
+          <div class="sample-entry"><span class="sample-line" aria-hidden="true"></span><div><strong>龟背竹</strong><p>新叶慢慢展开了。</p></div><span class="sample-tag">观察</span></div>
+          <div class="sample-entry"><span class="sample-line secondary" aria-hidden="true"></span><div><strong>窗边的绿萝</strong><p>浇透水，等盆土慢慢变干。</p></div><span class="sample-tag">浇水</span></div>
+        </div>
+        <p class="visual-caption">Every plant, remembered.</p>
+      </div>
+    </section>
+
+    <section class="features container section" id="features" aria-labelledby="features-title">
+      <div class="section-heading"><div><p class="eyebrow">A LITTLE CARE, EVERY DAY</p><h2 id="features-title">照料有节奏，生长有记录。</h2></div><p>从第一盆绿植，到满阳台的陪伴。</p></div>
+      <div class="feature-grid">
+        <article class="feature"><span class="feature-number">01 / 植物档案</span><h3>认识每一份绿意。</h3><p>照片、位置、品种和自定义标签，让每盆植物都有自己的档案。同名植物，也能分得清。</p><div class="feature-note">头像 · 标签 · 搜索与筛选</div></article>
+        <article class="feature"><span class="feature-number">02 / 日常养护</span><h3>给照料一点节奏。</h3><p>安排循环检查计划，一次记录多种养护。完成后再计算下次日期，跟上植物真实的节奏。</p><div class="feature-note">循环计划 · 延后 · 养护记录</div></article>
+        <article class="feature"><span class="feature-number">03 / 生长时间线</span><h3>回头看看，它长大了。</h3><p>用文字和照片留住变化，沿时间线回看每次照料。资料保存在本机，离线也能继续记录。</p><div class="feature-note">照片与备注 · 时间线 · CSV 导出</div></article>
+      </div>
+    </section>
+
+    <section class="download-section" id="download" aria-labelledby="download-title">
+      <div class="container section">
+        <div class="section-heading"><div><p class="eyebrow">MAKE ROOM FOR SOMETHING GREEN</p><h2 id="download-title">在你的设备上，种下一份记忆。</h2></div><div class="release-meta"><span>当前版本 v0.1.1</span><a href="https://github.com/ttezy/PlantNote-releases/releases/tag/v0.1.1">查看本次发布 <span aria-hidden="true">↗</span></a></div></div>
+        <div class="download-grid">
+          <article class="download-card featured-download"><div class="platform-heading"><span class="platform-icon" aria-hidden="true">iOS</span><span class="small-badge">优先试用</span></div><h3>iPhone / iPad</h3><p class="platform-meta">iOS / iPadOS 15.0+</p><p>通过 SideStore 签名安装，订阅预览源获取更新。</p><a class="button primary" href="ios.html">查看 iOS 安装指南 <span aria-hidden="true">↗</span></a><div class="card-links"><a href="https://github.com/ttezy/PlantNote-releases/releases/download/v0.1.1/plantnote-0.1.1-b6-ebc6a56b1449-attempt1-ios-arm64-unsigned.ipa">下载 IPA</a><a href="https://github.com/ttezy/PlantNote-releases/releases/download/v0.1.1/plantnote-0.1.1-b6-ebc6a56b1449-attempt1-ios-SHA256SUMS.txt" aria-label="iOS SHA-256 校验文件">SHA-256</a></div></article>
+          <article class="download-card"><div class="platform-heading"><span class="platform-icon" aria-hidden="true">A</span><span class="platform-format">APK</span></div><h3>Android</h3><p class="platform-meta">ARM64 · 适合多数现代手机</p><p>下载后打开 APK 安装。当前预览包使用开发签名。</p><a class="button secondary" href="https://github.com/ttezy/PlantNote-releases/releases/download/v0.1.1/plantnote-0.1.1-b6-ebc6a56b1449-attempt1-android-arm64-v8a-dev-signed.apk">下载 ARM64 <span aria-hidden="true">↓</span></a><div class="card-links"><a href="install.html#android">安装说明</a><a href="https://github.com/ttezy/PlantNote-releases/releases/download/v0.1.1/plantnote-0.1.1-b6-ebc6a56b1449-attempt1-android-SHA256SUMS.txt" aria-label="Android SHA-256 校验文件">SHA-256</a></div><details class="other-architectures"><summary>其他架构</summary><div><a href="https://github.com/ttezy/PlantNote-releases/releases/download/v0.1.1/plantnote-0.1.1-b6-ebc6a56b1449-attempt1-android-armeabi-v7a-dev-signed.apk">ARM 32 位 · armeabi-v7a</a><a href="https://github.com/ttezy/PlantNote-releases/releases/download/v0.1.1/plantnote-0.1.1-b6-ebc6a56b1449-attempt1-android-x86_64-dev-signed.apk">x86_64 · 模拟器等设备</a></div></details></article>
+          <article class="download-card"><div class="platform-heading"><span class="platform-icon" aria-hidden="true">⊞</span><span class="platform-format">ZIP</span></div><h3>Windows</h3><p class="platform-meta">x64 · 便携版</p><p>完整解压文件夹，打开 plantnote.exe 即可开始。</p><a class="button secondary" href="https://github.com/ttezy/PlantNote-releases/releases/download/v0.1.1/plantnote-0.1.1-b6-ebc6a56b1449-attempt1-windows-x64-portable.zip">下载 Windows 版 <span aria-hidden="true">↓</span></a><div class="card-links"><a href="install.html#windows">安装说明</a><a href="https://github.com/ttezy/PlantNote-releases/releases/download/v0.1.1/plantnote-0.1.1-b6-ebc6a56b1449-attempt1-windows-SHA256SUMS.txt" aria-label="Windows SHA-256 校验文件">SHA-256</a></div></article>
+          <article class="download-card"><div class="platform-heading"><span class="platform-icon" aria-hidden="true">mac</span><span class="platform-format">DMG</span></div><h3>macOS</h3><p class="platform-meta">macOS 12+ · Apple silicon / Intel</p><p>打开磁盘映像安装。当前版本尚未发行签名与公证。</p><a class="button secondary" href="https://github.com/ttezy/PlantNote-releases/releases/download/v0.1.1/plantnote-0.1.1-b6-ebc6a56b1449-attempt1-macos-x86_64-arm64-unsigned.dmg">下载 macOS 版 <span aria-hidden="true">↓</span></a><div class="card-links"><a href="install.html#macos">安装说明</a><a href="https://github.com/ttezy/PlantNote-releases/releases/download/v0.1.1/plantnote-0.1.1-b6-ebc6a56b1449-attempt1-macos-SHA256SUMS.txt" aria-label="macOS SHA-256 校验文件">SHA-256</a></div></article>
+          <article class="download-card"><div class="platform-heading"><span class="platform-icon" aria-hidden="true">&gt;_</span><span class="platform-format">TAR.GZ</span></div><h3>Linux</h3><p class="platform-meta">x64 · 便携版</p><p>解压后运行 plantnote，保留同目录的依赖文件。</p><a class="button secondary" href="https://github.com/ttezy/PlantNote-releases/releases/download/v0.1.1/plantnote-0.1.1-b6-ebc6a56b1449-attempt1-linux-x64-portable.tar.gz">下载 Linux 版 <span aria-hidden="true">↓</span></a><div class="card-links"><a href="install.html#linux">安装说明</a><a href="https://github.com/ttezy/PlantNote-releases/releases/download/v0.1.1/plantnote-0.1.1-b6-ebc6a56b1449-attempt1-linux-SHA256SUMS.txt" aria-label="Linux SHA-256 校验文件">SHA-256</a></div></article>
+          <article class="download-card"><div class="platform-heading"><span class="platform-icon" aria-hidden="true">{ }</span><span class="platform-format">WEB ZIP</span></div><h3>Web</h3><p class="platform-meta">网页部署包</p><p>适合自行部署到 HTTP(S) 静态服务器，在浏览器中使用。</p><a class="button secondary" href="https://github.com/ttezy/PlantNote-releases/releases/download/v0.1.1/plantnote-0.1.1-b6-ebc6a56b1449-attempt1-web.zip">下载 Web 部署包 <span aria-hidden="true">↓</span></a><div class="card-links"><a href="install.html#web">部署说明</a><a href="https://github.com/ttezy/PlantNote-releases/releases/download/v0.1.1/plantnote-0.1.1-b6-ebc6a56b1449-attempt1-web-SHA256SUMS.txt" aria-label="Web SHA-256 校验文件">SHA-256</a></div></article>
+        </div>
+        <div class="download-footnote"><p>当前为开发预览，优先验证 iPhone / SideStore。各平台安装体验仍在完善中。</p><a href="https://github.com/ttezy/PlantNote-releases/releases">历史版本与全部附件 <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="ios-banner container section" aria-labelledby="ios-banner-title"><div><p class="eyebrow">HELLO, IPHONE</p><h2 id="ios-banner-title">第一次用 SideStore？<br>从这里开始。</h2><p>准备设备、安装 SideStore、添加植记预览源。<br>把每一步都写清楚，也把续签和更新讲明白。</p></div><a class="button primary" href="ios.html">打开完整安装指南 <span aria-hidden="true">↗</span></a></section>
+    <aside class="preview-note container"><strong>关于这个预览版</strong><p>植物资料与照片保存在设备本机，暂不支持云同步和完整备份。CSV 可导出文字资料与记录，不包含照片。系统通知提醒仍在开发中。</p></aside>
+  </main>
+  <footer class="site-footer container"><div><a class="brand footer-brand" href="./">植记 <span class="brand-en">PlantNote</span></a><p>每一棵植物，都被记得。</p></div><div class="footer-links"><a href="install.html">安装指南</a><a href="ios.html">iOS / SideStore</a><a href="https://github.com/ttezy/PlantNote-releases">公开下载仓库 <span aria-hidden="true">↗</span></a></div><p class="footer-small">安装包、订阅源与本站由 PlantNote-releases 提供。</p></footer>
+</body>
+</html>

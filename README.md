@@ -2,7 +2,7 @@
 
 每一棵植物，都被记得。
 
-[在 iPhone 上通过 SideStore 安装](https://ttezy.github.io/PlantNote-releases/) · [全部版本与各平台下载](https://github.com/ttezy/PlantNote-releases/releases)
+[植记官网与下载](https://ttezy.github.io/PlantNote-releases/) · [各平台安装指南](https://ttezy.github.io/PlantNote-releases/install.html) · [iOS / SideStore 指南](https://ttezy.github.io/PlantNote-releases/ios.html) · [历史版本](https://github.com/ttezy/PlantNote-releases/releases)
 
 此仓库提供 PlantNote 安装包、SHA-256 校验文件、图标和 SideStore 预览源。应用源码单独维护。
 
@@ -24,3 +24,14 @@ https://raw.githubusercontent.com/ttezy/PlantNote-releases/main/apps.json
 ```
 
 此来源包含预览版。植物资料与照片保存在设备本机，暂不支持云同步。SideStore 安装、签名续期和覆盖更新请以实际设备验证为准。
+
+## 官网
+
+本站使用 GitHub Pages，从 `main` 分支的根目录提供服务：
+
+- `index.html`：应用介绍、当前版本及六个平台的安装包下载。
+- `install.html`：各平台安装、SHA-256 校验、更新与数据说明。
+- `ios.html`：SideStore 首次安装、植记来源、IPA 安装、续签与排错。
+- `site.css` / `site.js`：响应式样式和源地址复制；无前端依赖、无统计脚本。
+
+下载链接直接指向对应版本的 Release 附件，不需要浏览器请求 GitHub API。后续应用发布会同步生成本站的版本号、实际架构、安装包与校验文件链接。页面模板在应用维护仓库中统一维护，避免下次发布覆盖网站改动；公开仓库保留可直接托管的完整网页文件，不包含应用源码。

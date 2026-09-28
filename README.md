@@ -1,23 +1,26 @@
-# 植记 · PlantNote 预览版
+# 植记 · PlantNote 下载
 
-每一棵植物，都被记得。这个仓库提供 iPhone 安装包、图标与 SideStore 订阅源。
+每一棵植物，都被记得。
 
-## 在 SideStore 中安装
+[在 iPhone 上通过 SideStore 安装](https://ttezy.github.io/PlantNote-releases/) · [全部版本与各平台下载](https://github.com/ttezy/PlantNote-releases/releases)
 
-在 iPhone 上打开 [植记安装页面](https://ttezy.github.io/PlantNote-releases/)，点击「添加到 SideStore」，按提示确认，然后在来源中安装「植记」。
+此仓库提供 PlantNote 安装包、SHA-256 校验文件、图标和 SideStore 预览源。应用源码单独维护。
 
-也可以在 SideStore 的来源页手动添加以下地址：
+| 平台 | 下载文件 |
+| --- | --- |
+| iPhone / iPad | `*-ios-arm64-unsigned.ipa`，由 SideStore 签名安装 |
+| Android | 对应设备架构的 `*.apk`，目前使用开发签名 |
+| Windows x64 | `*-windows-x64-portable.zip`，完整解压后运行 |
+| macOS | `*-macos-*-unsigned.dmg`，尚未进行发行签名与公证 |
+| Linux x64 | `*-linux-x64-portable.tar.gz` |
+| Web | `*-web.zip`，部署到 HTTP(S) 服务器 |
+
+每个平台附有 `*-SHA256SUMS.txt`，用于校验下载完整性。GitHub 自动提供的 Source code 压缩包仅包含本仓库的分发说明和订阅文件。
+
+固定的 SideStore 源地址：
 
 ```text
 https://raw.githubusercontent.com/ttezy/PlantNote-releases/main/apps.json
 ```
 
-[直接安装入口](https://ttezy.github.io/PlantNote-releases/) · [下载 IPA](https://github.com/ttezy/PlantNote-releases/releases/tag/v0.1.0)
-
-要求 iOS 15+，且设备已配置 SideStore。添加源不等于安装完成，签名、安装及后续续签仍由 SideStore 处理。后续版本会使用同一源地址提供更新。
-
-## 当前状态
-
-0.1.0 为首个预览版。iOS 编译与打包通过，真机安装、相册、拍照和覆盖更新仍待验收。数据保存在设备本机，暂无云同步与完整照片备份，CSV 不包含图片。这个下载仓库不包含个人植物资料或记录。
-
-本版 IPA SHA-256：`c7f4d4ac13f47968c64b93ac0db30cd137b8e8dd1682530303d057ea82b6ee0e`。
+此来源包含预览版。植物资料与照片保存在设备本机，暂不支持云同步。SideStore 安装、签名续期和覆盖更新请以实际设备验证为准。

@@ -30,6 +30,14 @@
       },
       "versions": [
         {
+          "version": "0.1.1",
+          "date": "2026-09-28T15:16:20Z",
+          "localizedDescription": "植记 0.1.1 · 预览版",
+          "downloadURL": "https://github.com/ttezy/PlantNote-releases/releases/download/v0.1.1/plantnote-0.1.1-b6-ebc6a56b1449-attempt1-ios-arm64-unsigned.ipa",
+          "size": 8214425,
+          "minOSVersion": "15.0"
+        },
+        {
           "version": "0.1.0",
           "date": "2026-09-28T07:18:38Z",
           "localizedDescription": "首个预览版：植物资料、标签、循环养护计划、观察照片、时间线、CSV 导入导出，以及触摸滑动与桌面菜单操作。",

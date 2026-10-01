@@ -25,10 +25,19 @@
         "entitlements": [],
         "privacy": {
           "NSCameraUsageDescription": "用于拍摄植物照片，添加到你正在填写的养护记录。",
+          "NSLocationWhenInUseUsageDescription": "Use your approximate location to show outdoor temperature and humidity above today’s plant care tasks.",
           "NSPhotoLibraryUsageDescription": "用于选择植物头像和养护照片，记录植物的生长与日常变化。"
         }
       },
       "versions": [
+        {
+          "version": "0.1.5",
+          "date": "2026-10-01T01:17:19Z",
+          "localizedDescription": "植记 0.1.5 · 预览版",
+          "downloadURL": "https://github.com/ttezy/PlantNote-releases/releases/download/v0.1.5/plantnote-0.1.5-b16-4d82f75c3d6d-attempt1-ios-arm64-unsigned.ipa",
+          "size": 8432282,
+          "minOSVersion": "15.0"
+        },
         {
           "version": "0.1.4",
           "date": "2026-09-30T05:31:31Z",

@@ -31,6 +31,14 @@
       },
       "versions": [
         {
+          "version": "0.1.6",
+          "date": "2026-10-02T20:45:10Z",
+          "localizedDescription": "植记 0.1.6 · 预览版",
+          "downloadURL": "https://github.com/ttezy/PlantNote-releases/releases/download/v0.1.6/plantnote-0.1.6-b18-1aad4a96d87b-attempt1-ios-arm64-unsigned.ipa",
+          "size": 8459294,
+          "minOSVersion": "15.0"
+        },
+        {
           "version": "0.1.5",
           "date": "2026-10-01T01:17:19Z",
           "localizedDescription": "植记 0.1.5 · 预览版",

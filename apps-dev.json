@@ -25,11 +25,20 @@
         "entitlements": [],
         "privacy": {
           "NSCameraUsageDescription": "用于拍摄植物照片，添加到你正在填写的养护记录。",
+          "NSLocalNetworkUsageDescription": "Connect to your NAS or WebDAV server on the local network to sync plant records and photos.",
           "NSLocationWhenInUseUsageDescription": "Use your approximate location to show outdoor temperature and humidity above today’s plant care tasks.",
           "NSPhotoLibraryUsageDescription": "用于选择植物头像和养护照片，记录植物的生长与日常变化。"
         }
       },
       "versions": [
+        {
+          "version": "0.1.9",
+          "date": "2026-10-05T21:14:23Z",
+          "localizedDescription": "植记 0.1.9 · 开发测试版 v0.1.9-dev.3",
+          "downloadURL": "https://github.com/ttezy/PlantNote-releases/releases/download/v0.1.9-dev.3/plantnote-0.1.9-b24-41f2fc9182a8-attempt1-ios-arm64-unsigned.ipa",
+          "size": 8767948,
+          "minOSVersion": "15.0"
+        },
         {
           "version": "0.1.7",
           "date": "2026-10-05T17:01:52Z",

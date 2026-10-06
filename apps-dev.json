@@ -8,7 +8,7 @@
       "bundleIdentifier": "com.plantnote.plantnote",
       "developerName": "ttezy",
       "subtitle": "开发测试版",
-      "localizedDescription": "PlantNote 开发测试版：植物、记录、计划和照片的 WebDAV 同步。\n\n使用与普通版相同的应用 ID，安装会覆盖原版并保留本机数据，不能并排安装。仅供主动参加测试的用户使用，包含尚未合并到 main 的功能。",
+      "localizedDescription": "PlantNote 开发测试版：账号登录与植物、记录、计划和照片的 Supabase 自动同步。\n\n使用与普通版相同的应用 ID，安装会覆盖原版并保留本机数据，不能并排安装。仅供主动参加测试的用户使用，包含尚未合并到 main 的功能。",
       "iconURL": "https://raw.githubusercontent.com/ttezy/PlantNote-releases/main/icon.png",
       "tintColor": "254B38",
       "permissions": [
@@ -25,12 +25,19 @@
         "entitlements": [],
         "privacy": {
           "NSCameraUsageDescription": "用于拍摄植物照片，添加到你正在填写的养护记录。",
-          "NSLocalNetworkUsageDescription": "Connect to your NAS or WebDAV server on the local network to sync plant records and photos.",
           "NSLocationWhenInUseUsageDescription": "Use your approximate location to show outdoor temperature and humidity above today’s plant care tasks.",
           "NSPhotoLibraryUsageDescription": "用于选择植物头像和养护照片，记录植物的生长与日常变化。"
         }
       },
       "versions": [
+        {
+          "version": "0.1.11",
+          "date": "2026-10-06T03:51:09Z",
+          "localizedDescription": "植记 0.1.11 · 开发测试版 v0.1.11-dev.1",
+          "downloadURL": "https://github.com/ttezy/PlantNote-releases/releases/download/v0.1.11-dev.1/plantnote-0.1.11-b31-46a9bb4e980c-attempt1-ios-arm64-unsigned.ipa",
+          "size": 8944890,
+          "minOSVersion": "15.0"
+        },
         {
           "version": "0.1.10",
           "date": "2026-10-05T22:16:06Z",

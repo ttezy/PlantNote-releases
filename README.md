@@ -8,12 +8,14 @@
 
 | 平台 | 下载文件 |
 | --- | --- |
-| iPhone / iPad | `*-ios-arm64-unsigned.ipa`，由 SideStore 签名安装 |
-| Android | 对应设备架构的 `*.apk`，目前使用开发签名 |
-| Windows x64 | `*-windows-x64-portable.zip`，完整解压后运行 |
-| macOS | `*-macos-*-unsigned.dmg`，尚未进行发行签名与公证 |
-| Linux x64 | `*-linux-x64-portable.tar.gz` |
-| Web | `*-web.zip`，部署到 HTTP(S) 服务器 |
+| iPhone / iPad | `PlantNote-<版本>-iOS.ipa`，由 SideStore 签名安装 |
+| Android | `PlantNote-<版本>-Android-ARM64.apk`；另有 ARM32 / x64，目前使用开发签名 |
+| Windows x64 | `PlantNote-<版本>-Windows-x64.zip`，完整解压后运行 |
+| macOS | `PlantNote-<版本>-macOS-Universal.dmg`，支持 Intel 与 Apple 芯片，尚未进行发行签名与公证 |
+| Linux x64 | `PlantNote-<版本>-Linux-x64.tar.gz` |
+| Web | `PlantNote-<版本>-Web.zip`，部署到 HTTP(S) 服务器 |
+
+新版公开安装包使用简洁名称，开发版的版本字段保留 `-dev.N`。历史版本继续使用原文件名与下载地址；构建编号、commit 和重试次数保留在内部构建产物中。
 
 发布流程在上传前校验安装包完整性。GitHub 自动提供的 Source code 压缩包仅包含本仓库的分发说明和订阅文件。
 
@@ -23,7 +25,7 @@
 https://raw.githubusercontent.com/ttezy/PlantNote-releases/main/apps.json
 ```
 
-此来源包含预览版。植物资料与照片保存在设备本机，暂不支持云同步。SideStore 安装、签名续期和覆盖更新请以实际设备验证为准。
+此来源包含预览版。可离线在本机使用；邮箱登录后可自动同步账号资料与照片。本地库不会自动上传。SideStore 安装、签名续期和覆盖更新请以实际设备验证为准。
 
 ## 官网
 

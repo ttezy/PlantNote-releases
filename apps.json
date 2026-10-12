@@ -14,22 +14,30 @@
       "permissions": [
         {
           "type": "camera",
-          "usageDescription": "用于拍摄植物照片，添加到你正在填写的养护记录。"
+          "usageDescription": "用于拍摄植物头像、养护照片或你主动添加的反馈图片。"
         },
         {
           "type": "photos",
-          "usageDescription": "用于选择植物头像和养护照片，记录植物的生长与日常变化。"
+          "usageDescription": "用于选择植物头像、养护照片或你主动添加的反馈截图。"
         }
       ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {
-          "NSCameraUsageDescription": "用于拍摄植物照片，添加到你正在填写的养护记录。",
+          "NSCameraUsageDescription": "用于拍摄植物头像、养护照片或你主动添加的反馈图片。",
           "NSLocationWhenInUseUsageDescription": "Use your approximate location to show outdoor temperature and humidity above today’s plant care tasks.",
-          "NSPhotoLibraryUsageDescription": "用于选择植物头像和养护照片，记录植物的生长与日常变化。"
+          "NSPhotoLibraryUsageDescription": "用于选择植物头像、养护照片或你主动添加的反馈截图。"
         }
       },
       "versions": [
+        {
+          "version": "0.1.14",
+          "date": "2026-10-12T19:15:43Z",
+          "localizedDescription": "植记 0.1.14 · 预览版",
+          "downloadURL": "https://github.com/ttezy/PlantNote-releases/releases/download/v0.1.14/PlantNote-0.1.14-iOS.ipa",
+          "size": 8960924,
+          "minOSVersion": "15.0"
+        },
         {
           "version": "0.1.13",
           "date": "2026-10-06T23:04:57Z",
